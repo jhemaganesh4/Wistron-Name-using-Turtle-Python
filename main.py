@@ -1,15 +1,18 @@
+#Printing Wistron Name using Python Turtle
 
-import turtle
-g = turtle.Turtle()
-g.speed(200)
-#Positioning pen
-g.penup()
+import turtle  #Importing Turtle
+g = turtle.Turtle() #Naming turtle as "g"
+g.speed(200) #Speed of the pen
+g.hideturtle()           #make the turtle invisible
+
+#Positioning the Turtle point before start writing the letters
+g.penup() #don't draw when turtle moves
 g.right(180)
 g.forward(400)
 g.left(180)
-g.pendown()
+g.pendown() #draw when the turtle moves
 
-#Writing "w"
+#Priniting letter "W"
 
 g.color('black', '#016795')
 g.begin_fill()
@@ -40,13 +43,15 @@ g.right(75)
 g.forward(130)
 g.end_fill()
 
-#writing I
-g.color("black","#A2CC57")
-g.begin_fill()
+#Positioning pen for printing "I"
 g.penup()
 g.right(105)
-g.forward(215)
+g.forward(219)
 g.pendown()
+
+#Printing letter "I"
+g.color("black","#A2CC57")
+g.begin_fill()
 g.right(90)
 g.forward(125)
 g.left(90)
@@ -55,7 +60,6 @@ g.left(90)
 g.forward(125)
 g.left(90)
 g.end_fill()
-
 g.color("black","#016795")
 g.begin_fill()
 g.forward(30)
@@ -67,14 +71,14 @@ g.right(90)
 g.forward(30)
 g.end_fill()
 
-#writing "S"
+##Positioning pen for printing "S"
 g.left(90)
 g.penup()
 g.forward(50)
-g.pendown()
-g.penup()
 g.circle(-35,-185)
 g.pendown()
+
+# Printing letter "S"
 g.color('black', '#016795')
 g.begin_fill()
 g.circle(20,-250)
@@ -90,7 +94,8 @@ g.left(90)
 g.circle(44.5,215)
 g.end_fill()
 
-#Pen position to T
+#Positioning pen for printing "T"
+
 g.penup()
 g.left(110)
 g.forward(102)
@@ -98,7 +103,7 @@ g.right(90)
 g.forward(87)
 g.pendown()
 
-#Writing "T"
+#Printing letter "T"
 
 g.color("black","#016795")
 g.begin_fill()
@@ -131,7 +136,8 @@ g.left(90)
 g.forward(30)
 g.end_fill()
 
-#Pen to R position
+##Positioning pen for printing "R"
+
 g.penup()
 g.right(180)
 g.forward(80)
@@ -139,7 +145,7 @@ g.right(90)
 g.forward(30)
 g.pendown()
 
-#Writing R
+#Printing letter "R"
 g.color("black","#016795")
 g.begin_fill()
 g.forward(135)
@@ -159,14 +165,16 @@ g.forward(30)
 g.end_fill()
 
 
-#Position to "O"
+##Positioning pen for printing "O"
+
 g.penup()
 g.left(180)
 g.forward(70)
 g.right(90)
 g.forward(70)
 g.pendown()
-#Writing "O"
+
+#Printing Letter "R"
 g.color("black","#016795")
 g.begin_fill()
 g.circle(65,-360,300)
@@ -178,7 +186,8 @@ g.pendown()
 g.circle(32.5,360,300)
 g.end_fill()
 
-#Positioning "N"
+#Positioning pen for printing "N"
+
 
 g.penup()
 g.left(90)
@@ -189,10 +198,9 @@ g.right(180)
 g.forward(15)
 g.pendown()
 
-#Writing "N"
+#Printing letter "N"
 g.color("black","#016795")
 g.begin_fill()
-
 g.forward(120)
 g.left(90)
 g.forward(30)
